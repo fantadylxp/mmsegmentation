@@ -41,15 +41,21 @@ def ade_classes():
         'clock', 'flag'
     ]
 
-
 def voc_classes():
     """Pascal VOC class names for external use."""
     return [
-        'background', 'aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus',
-        'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse',
-        'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train',
-        'tvmonitor'
+        'background', 
+        'LockingWire',
+        "Bolt"
     ]
+# def voc_classes():
+#     """Pascal VOC class names for external use."""
+#     return [
+#         'background', 'aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus',
+#         'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse',
+#         'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train',
+#         'tvmonitor'
+#     ]
 
 
 def cocostuff_classes():
@@ -297,13 +303,17 @@ def ade_palette():
             [102, 255, 0], [92, 0, 255]]
 
 
+# def voc_palette():
+#     """Pascal VOC palette for external use."""
+#     return [[0, 0, 0], [128, 0, 0], [0, 128, 0], [128, 128, 0], [0, 0, 128],
+#             [128, 0, 128], [0, 128, 128], [128, 128, 128], [64, 0, 0],
+#             [192, 0, 0], [64, 128, 0], [192, 128, 0], [64, 0, 128],
+#             [192, 0, 128], [64, 128, 128], [192, 128, 128], [0, 64, 0],
+#             [128, 64, 0], [0, 192, 0], [128, 192, 0], [0, 64, 128]]
 def voc_palette():
     """Pascal VOC palette for external use."""
-    return [[0, 0, 0], [128, 0, 0], [0, 128, 0], [128, 128, 0], [0, 0, 128],
-            [128, 0, 128], [0, 128, 128], [128, 128, 128], [64, 0, 0],
-            [192, 0, 0], [64, 128, 0], [192, 128, 0], [64, 0, 128],
-            [192, 0, 128], [64, 128, 128], [192, 128, 128], [0, 64, 0],
-            [128, 64, 0], [0, 192, 0], [128, 192, 0], [0, 64, 128]]
+    return [[0, 0, 0], [128, 0, 0]]
+
 
 
 def cocostuff_palette():

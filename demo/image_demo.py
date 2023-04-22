@@ -8,10 +8,10 @@ from mmseg.apis import inference_model, init_model, show_result_pyplot
 
 def main():
     parser = ArgumentParser()
-    parser.add_argument('img', help='Image file')
-    parser.add_argument('config', help='Config file')
-    parser.add_argument('checkpoint', help='Checkpoint file')
-    parser.add_argument('--out-file', default=None, help='Path to output file')
+    parser.add_argument('--img', default="./data/VOCdevkit_aug/VOC2012/JPEGImages/voc_0173.jpg",help='Image file')
+    parser.add_argument('--config', default="./work_dirs/deeplabv3_r50-d8_4xb4-20k_voc12aug-512x512/deeplabv3_r50-d8_4xb4-20k_voc12aug-512x512.py",help='Config file')
+    parser.add_argument('--checkpoint',default= "/home/bjtds/mmlab/mmsegmentation/work_dirs/deeplabv3_r50-d8_4xb4-20k_voc12aug-512x512/iter_20000.pth",help='Checkpoint file')
+    parser.add_argument('--out-file', default="./work_dirs/deeplabv3_r50-d8_4xb4-20k_voc12aug-512x512/test.jpg", help='Path to output file')
     parser.add_argument(
         '--device', default='cuda:0', help='Device used for inference')
     parser.add_argument(

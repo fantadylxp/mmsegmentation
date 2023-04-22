@@ -118,3 +118,4 @@ mmseg/.mim
 
 # Pytorch
 *.pth
+demo/test_crop
